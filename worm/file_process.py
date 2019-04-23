@@ -43,5 +43,5 @@ for name in glob.glob('C:\\Users\\chenj\\Desktop\\peopledata*\\index.html'):
         pass
 df = df.sort_values(by=['date'])
 df['date'] = pd.to_datetime(df['date'])
-print(df['date'])
+print(df.info())
 df.to_csv('1978to2019.csv')
