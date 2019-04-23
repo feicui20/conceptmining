@@ -23,18 +23,20 @@ for year in year_list:
     try:
         for i in range(len(df[year])):
             para = df[year].iloc[i]['para']
-            para_n = re.sub(u"[\s\d\[\]%+：．。？！/《》“”‘’、，；（）【】—■]+", "", para)
-            para_list += para_n
+            # para_n = re.sub(u"[\s\d\[\]\.\-%％+＋：．…。？！/《》“”‘’、,·，；（）【】—■]+", "", para)
+            para_n = re.findall(r"[\u4e00-\u9fff]+", para)
+            para_list += "".join(para_n)
     except:
         pass
 #     for i in range(len(df[year])):
 #         para = df[year].iloc[i]['para']
-#         para_n = re.sub(u"[\s\d\[\]%+：．。？！/《》“”‘’、，；（）【】—■]+", "", para)
+#         para_n = re.findall(r"[\u4e00-\u9fff]+", para)
+#         para = "".join(para_n)
 #         topKWords = jieba.analyse.extract_tags(para_n, topK=7)
 #         word_list.append(topKWords)
 # for item in word_list:
 #     print('/'.join(item))
-
+# print(para_list)
 segments = dict()
 print(len(para_list))
 words = jieba.cut(para_list)
@@ -74,4 +76,4 @@ df2.to_csv('mydict.csv')
 #     for i in segments_sort:
 #         f.write(i[0]+'\t'+str(i[1]))
 #         f.write('\n')
-# print(df['1984'])
+# # print(df['1984'])
