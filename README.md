@@ -21,8 +21,8 @@ The `index` is generated automatically,
 the `frequency` is times that the word occurs in all news,
 the `isdict` shows if the word is a stop word which means `0` for stop word,
 the `word` is word itself.  
-index | frequency | isdict | word
--|-|-|-
+index | frequency | isdict | word 
+:-: | :-: | :-: | :-: 
 1 | 21160 | 0 | 的 
 103 | 5462 | 1 农村  
 
