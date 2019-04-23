@@ -11,7 +11,7 @@ the `para` is the content of the nes,
 the `title_first` and `title_second` are the main and sub title of the news, 
 there may be no `title_second` in the news.   
 
-index | author | date | para | title_first | title_second 
+index | author | date | para | title_first | title_second
 :-: | :-: | :-: | :-: | :-: | :-:
 557 | 卢小飞 | 1984-02-27 | 本报讯... | 四川“三农”为农民提供技术服务,行政管理、科研、教育部门开展多渠道协作 | 无 |
 
@@ -21,10 +21,10 @@ The `index` is generated automatically,
 the `frequency` is times that the word occurs in all news,
 the `isdict` shows if the word is a stop word which means `0` for stop word,
 the `word` is word itself.  
-index | frequency | isdict | word 
-:-: | :-: | :-: | :-: 
-1 | 21160 | 0 | 的 
-103 | 5462 | 1 | 农村  
+index | frequency | isdict | word
+:-: | :-: | :-: | :-:
+1 | 21160 | 0 | 的 |
+103 | 5462 | 1 | 农村 |
 
 ## some codes
 ### The Crawler is in the directory worm, and the venv directory are package that you need.
