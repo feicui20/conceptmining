@@ -27,5 +27,14 @@ index | frequency | isdict | word
 1 | 21160 | 0 | 的 |
 103 | 5462 | 1 | 农村 |
 
+### `worm/FARSW.png`
+The `worm/FARSW.png` is a frequency-amount relationship with stop words figure, 
+which I pick up words whose frequency is no more than 5500 and no less than 18. 
+Stop words are in this figure.   
+![worm/FARSW.png](/worm/FARSW.png)  
+From this figure we can see that there are only ten words whose frequency is more than 2000, 
+and compared with the file `worm/mydict.csv` only four word are what we concerned about, 
+that is `农村`、`农业`、`农民`、`发展`.  
+
 ## some codes
 ### The Crawler is in the directory worm, and the venv directory are package that you need.
