@@ -1,6 +1,6 @@
 # worm
 
-## csv file
+## all file
 ### `worm/1978to2019.csv`
 I have processed the "sannong" news and made it a csv file, you can read it by pandas.  
 The `index` is generated automatically, 
