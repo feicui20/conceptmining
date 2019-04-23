@@ -1,7 +1,7 @@
 # worm
 
 ## csv file
-### `1978to2019.csv`
+### `worm/1978to2019.csv`
 I have processed the "sannong" news and made it a csv file, you can read it by pandas.  
 The `index` is generated automatically, 
 the `author` is writer of the news, 
@@ -15,7 +15,7 @@ index | author | date | para | title_first | title_second
 :-: | :-: | :-: | :-: | :-: | :-:
 557 | 卢小飞 | 1984-02-27 | 本报讯... | 四川“三农”为农民提供技术服务,行政管理、科研、教育部门开展多渠道协作 | 无 |
 
-### `mydict.csv`
+### `worm/mydict.csv`
 I have cut all words in the "sannong" news, it has about `30000` words in file, and the format is below:  
 The `index` is generated automatically,
 the `frequency` is times that the word occurs in all news,
