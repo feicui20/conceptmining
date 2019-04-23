@@ -24,7 +24,7 @@ the `word` is word itself.
 index | frequency | isdict | word 
 :-: | :-: | :-: | :-: 
 1 | 21160 | 0 | 的 
-103 | 5462 | 1 农村  
+103 | 5462 | 1 | 农村  
 
 ## some codes
 ### The Crawler is in the directory worm, and the venv directory are package that you need.
