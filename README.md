@@ -34,13 +34,19 @@ and I create a `txt` file `worm/real_dict.txt` which only has words in `worm/rea
 so no more big deals.
 
 ### `worm/FARSW.png`
-The `worm/FARSW.png` is a frequency-amount relationship with stop words figure, 
+The `worm/FARSW.png` is a frequency-amount relationship **with** stop words figure, 
 in which I pick up words whose frequency are no more than 5500 and no less than 18. 
 Stop words are in this figure.   
 ![worm/FARSW.png](/worm/FARSW.png)  
 From this figure we can see that there are only ten words whose frequency are more than 2000, 
 and compared with the file `worm/mydict.csv` only four words are what we concerned about, 
 that are `农村`、`农业`、`农民` and `发展`.  
+
+### `worm/FARNSW.png`
+The `worm/FARSW.png` is a frequency-amount relationship **without** stop words figure, 
+compared with `worm/FARSW.png` this figure has less words, 
+but the same distribution.
+![worm/FARNSW.png](/worm/FARNSW.png) 
 
 ## some codes
 ### The Crawler is in the directory worm, and the venv directory are package that you need.
