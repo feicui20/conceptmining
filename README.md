@@ -27,6 +27,12 @@ index | frequency | isdict | word
 1 | 21160 | 0 | 的 |
 103 | 5462 | 1 | 农村 |
 
+### `worm/real_dict.csv` and `worm/real_dict.txt`
+The `worm/real_dict.csv` is file which picks up the stop words with domain knowledge by `臧雷振`.
+A lot thanks to him. So the format of this file is the same with `worm/mydict.csv`, 
+and I create a `txt` file `worm/real_dict.txt` which only has words in `worm/real_dict.csv` and just for use,
+so no more big deals.
+
 ### `worm/FARSW.png`
 The `worm/FARSW.png` is a frequency-amount relationship with stop words figure, 
 in which I pick up words whose frequency are no more than 5500 and no less than 18. 
