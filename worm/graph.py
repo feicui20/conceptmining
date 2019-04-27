@@ -1,12 +1,16 @@
+# encoding=utf-8
+
 import pandas as pd
 import re
 import jieba.analyse
 
+# import the '1978to2019.csv' file
 df = pd.read_csv('1978to2019.csv')
 df['date'] = pd.to_datetime(df['date'])
 df = df.set_index('date')
 
 
+# use connect function to link words
 def connect(word_list, num):
     epoch = min(num+1, len(word_list))
     for i in range(epoch):
@@ -25,33 +29,36 @@ def connect(word_list, num):
 
 global my_dict
 my_dict = []
-with open('real_dict.txt', 'r') as f:
+with open('real_dict_100_1000.txt', 'r') as f:
     for i in f.readlines():
         my_dict.append("".join(i.split()))
 
-for year in ['2008', '2018']:
-
+year_list = ["{}".format(i) for i in range(2001, 2011)]
+print(year_list)
+for year in year_list:
+    word_list = ""
     for i in range(len(df[year])):
         para = df[year].iloc[i]['para']
-        para_n = re.findall(r"[\u4e00-\u9fff]+", para)
-        para = "".join(para_n)
-        para = "".join(para.split())
-        word_list = jieba.cut(para)
+        if not pd.isnull(para):
+            para_n = re.findall(r"[\u4e00-\u9fff]+", para)
+            para = "".join(para_n)
+            para = "".join(para.split())
+            word_list += " ".join(jieba.cut(para))
+            word_list += '\n'
 
-        with open('{}.txt'.format(year), 'a') as f:
-            f.write(" ".join(word_list))
-            f.write('\n')
+    with open('{}.txt'.format(year), 'w', encoding='utf-8') as f:
+        f.write(word_list)
 
 
 num = 2
-for year in ['2008', '2018']:
+for year in year_list:
     word_list = []
     graph_list = []
-    with open('{}.txt'.format(year), 'r') as f:
+    with open('{}.txt'.format(year), 'r', encoding='utf-8') as f:
         for line in f.readlines():
             word_list = line.split()
             connect(word_list, num)
-    with open('graph{}.txt'.format(year), 'w') as f:
+    with open('graph{}.txt'.format(year), 'w', encoding='utf-8') as f:
         for item in graph_list:
             f.write(" ".join(item))
             f.write('\n')
