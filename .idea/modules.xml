@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/worm.iml" filepath="$PROJECT_DIR$/.idea/worm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/conceptmining.iml" filepath="$PROJECT_DIR$/.idea/conceptmining.iml" />
     </modules>
   </component>
 </project>

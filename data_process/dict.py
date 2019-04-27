@@ -1,4 +1,11 @@
 import pandas as pd
+import sys
+import argparse
+
+
+def main(args):
+    print(args)
+    pass
 
 
 def get_real_dict_more_than_num(num1):
@@ -17,5 +24,12 @@ def get_real_dict_more_than_num(num1):
     df2.to_csv('real_dict_{}.csv'.format(num1))
 
 
+def parse_arguments(argv):
+    parser = argparse.ArgumentParser()
+
+
 get_real_dict_more_than_num(100)
 
+
+if __name__ == "__main__":
+    main(parse_arguments(sys.argv[1:]))
