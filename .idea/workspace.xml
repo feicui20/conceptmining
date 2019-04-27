@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a260640d-840b-496e-acec-846390908a65" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/real_dict_100.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/usage/real_dict_100.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/real_dict_100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/usage/real_dict_100.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/usage/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,16 +24,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="360">
-                <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+                <caret line="15" selection-start-line="15" selection-end-line="15" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
               </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -143,6 +149,7 @@
         <option value="$PROJECT_DIR$/data_process/__init__.py" />
         <option value="$PROJECT_DIR$/data_process/dict.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -427,9 +434,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/worm/cookie.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/1978to2019.csv" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/article.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -682,11 +686,18 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="360">
-            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <caret line="15" selection-start-line="15" selection-end-line="15" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
