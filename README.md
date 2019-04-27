@@ -28,7 +28,7 @@ The `data/figure/FARSW.png` is a frequency-amount relationship **with** stop wor
 in which I pick up words whose frequency are no more than 5500 and no less than 18. 
 Stop words are in this figure.
 
-![data/FARSW.png](/data/figure/FARSW.png)
+![data/figure/FARSW.png](/data/figure/FARSW.png)
 
 From this figure we can see that there are only ten words whose frequency is more than 2000, 
 and compared with the file `/data/raw/mydict.csv` only four words are what we concerned about, 
