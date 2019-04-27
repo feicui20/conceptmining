@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
-    <file url="file://$PROJECT_DIR$/worm/graph/graph2008.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/worm/graph/graph2018.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/worm/real_dict.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/worm/real_dict_100_1000.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/worm/real_dict_400_500.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/worm/txt/2001.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/worm/txt/2008.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/data/graph/graph2008.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/data/graph/graph2018.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/data/txt/2001.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/data/txt/2008.txt" charset="GBK" />
   </component>
 </project>
