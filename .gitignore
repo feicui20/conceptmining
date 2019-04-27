@@ -1,1 +1,6 @@
-/data
+/data/dict
+/data/graph
+/data/raw
+/data/subgraph
+/data/txt
+/data/usage
