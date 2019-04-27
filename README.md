@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿# ConceptMining
 ## Tables and Figures
 ### Tables
@@ -10,7 +9,7 @@ The `index` is generated automatically, the `author` is writer of the news, ther
 index | author | date | para | title_first | title_second
 :-: | :-: | :-: | :-: | :-: | :-:
 557 | 卢小飞 | 1984-02-27 | 本报讯... | 四川“三农”为农民提供技术服务,行政管理、科研、教育部门开展多渠道协作 | 无 |
-#### `worm/raw/mydict.csv`
+#### `data/raw/mydict.csv`
 I have cut all words in the "sannong" news, it has about `30000` words in file, and the format is below:
 
 The `index` is generated automatically, the `frequency` is times that the word occurs in all news, the `isdict` shows if the word is a stop word which means `0` for stop word, the `word` is word itself.  
@@ -20,7 +19,7 @@ index | frequency | isdict | word
 1 | 21160 | 0 | 的 |
 103 | 5462 | 1 | 农村 |
 
->The `worm/raw/real_dict.csv` is a table which deletes the stop words with domain knowledge by `臧雷振`.
+>The `data/raw/real_dict.csv` is a table which deletes the stop words with domain knowledge by `臧雷振`.
 A lot thanks to him. The format of this file is the same with `worm/raw/mydict.csv`, and I create a `txt` file `worm/real_dict.txt` which only has words in `worm/real_dict.csv` and just for use, so no more big deals.
 ### Figures
 #### `data/figure/FARSW.png`
