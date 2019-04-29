@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a260640d-840b-496e-acec-846390908a65" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_analyze/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analyze/analyze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_process/dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/file_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_process/file_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_process/gen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_process/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/stat.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analyze/stat.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_process/dict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="168">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -25,78 +34,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="15" selection-start-line="15" selection-end-line="15" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
+        <entry file="file://$PROJECT_DIR$/data_process/graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+              <folding>
+                <element signature="e#18#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_process/stat.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="21" column="61" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="61" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_process/analyze.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1968">
-              <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
-              <folding>
-                <element signature="e#18#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_process/graph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1128">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_process/script.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="20" column="55" selection-start-line="20" selection-end-line="20" selection-end-column="55" />
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_process/gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1872">
-              <caret line="78" column="71" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="71" />
+            <state relative-caret-position="329">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -117,6 +70,7 @@
       <find>artciles</find>
       <find>time</find>
       <find>改革</find>
+      <find>科技</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -147,15 +101,19 @@
         <option value="$PROJECT_DIR$/worm/analyze.py" />
         <option value="$PROJECT_DIR$/worm/dict.py" />
         <option value="$PROJECT_DIR$/data_process/__init__.py" />
-        <option value="$PROJECT_DIR$/data_process/dict.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/data_process/file_process.py" />
+        <option value="$PROJECT_DIR$/data_analyze/__init__.py" />
+        <option value="$PROJECT_DIR$/data_process/dict.py" />
+        <option value="$PROJECT_DIR$/data_process/graph.py" />
+        <option value="$PROJECT_DIR$/data_process/gen.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1900" />
-    <option name="width" value="848" />
+    <option name="x" value="1358" />
+    <option name="width" value="1390" />
     <option name="height" value="1756" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -177,6 +135,18 @@
               <item name="conceptmining" type="b2602c69:ProjectViewProjectNode" />
               <item name="conceptmining" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conceptmining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conceptmining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="subgraph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="conceptmining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="conceptmining" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="usage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="conceptmining" type="b2602c69:ProjectViewProjectNode" />
@@ -205,15 +175,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chenj\PycharmProjects\pachong\worm" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chenj\PycharmProjects\conceptmining\data_analyze" />
+      <recent name="C:\Users\chenj\PycharmProjects\conceptmining\data_process" />
       <recent name="C:\Users\chenj\PycharmProjects\conceptmining\data\usage" />
       <recent name="C:\Users\chenj\PycharmProjects\conceptmining\data\figure" />
-      <recent name="C:\Users\chenj\PycharmProjects\conceptmining\data_process" />
       <recent name="C:\Users\chenj\PycharmProjects\conceptmining\data" />
-      <recent name="C:\Users\chenj\PycharmProjects\pachong" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chenj\PycharmProjects\pachong\worm" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -228,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dict">
+  <component name="RunManager" selected="Python.graph">
     <configuration name="dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="conceptmining" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -346,7 +316,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\chenj\PycharmProjects\conceptmining\data_process\stat.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\chenj\PycharmProjects\conceptmining\data_analyze\stat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -357,9 +327,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.graph" />
         <item itemvalue="Python.dict" />
         <item itemvalue="Python.script" />
-        <item itemvalue="Python.graph" />
         <item itemvalue="Python.stat" />
         <item itemvalue="Python.gen" />
       </list>
@@ -399,7 +369,26 @@
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16282527" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13234201" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.26657826" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.108753316" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891247" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32891247" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3183024" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.25994694" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.44034708" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16208178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -411,33 +400,18 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891247" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32891247" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3183024" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2612732" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26092714" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.44034708" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="code" />
     <option name="LAST_COMMIT_MESSAGE" value="code" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data_process/gen.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/1978to2019.csv" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/article.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -530,26 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/file_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/word_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worm/real_dict_100_1000.txt" />
     <entry file="file://$PROJECT_DIR$/data/txt/2005.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -570,19 +524,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/worm/subgraph2001" />
-    <entry file="file://$PROJECT_DIR$/data/subgraph/subgraph2001.dot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/graph/graph2001">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/raw/1978to2019.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="3648">
           <caret line="161" selection-start-line="161" selection-end-line="161" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/txt/2001.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -628,57 +579,20 @@
     <entry file="file://$PROJECT_DIR$/data_process/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/dict.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/stat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/analyze.py">
+    <entry file="file://$PROJECT_DIR$/data_analyze/analyze.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1968">
           <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
           <folding>
             <element signature="e#18#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" column="55" selection-start-line="20" selection-end-line="20" selection-end-column="55" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_process/gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="78" column="71" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -694,10 +608,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/data_process/file_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="-544">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analyze/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analyze/stat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="61" />
+          <folding>
+            <element signature="e#18#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_process/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="20" column="55" selection-start-line="20" selection-end-line="20" selection-end-column="55" />
+          <folding>
+            <element signature="e#18#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_process/word_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/usage/real_dict_100.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1368" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_process/dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_process/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+          <folding>
+            <element signature="e#18#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/subgraph/subgraph2001.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3768">
+          <caret line="157" column="10" lean-forward="true" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_process/gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
       </provider>
     </entry>

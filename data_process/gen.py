@@ -5,7 +5,6 @@ import snap
 import json
 reload(sys)
 sys.setdefaultencoding('utf-8')
-from graphviz import Digraph
 
 
 def alter(file, old_str, new_str):
@@ -23,7 +22,7 @@ def alter2(file, index, color):
     file_data = ""
     with open(file, "r") as f:
         for line in f:
-            if line.split()[0] == str(index):
+            if line.split() and line.split()[0] == str(index):
                 # line = line.replace(']', ', fillcolor="{}", style=filled]'.format(color))
                 line += '{} [fillcolor="{}", style=filled]\n'.format(index, color)
             file_data += line
@@ -58,15 +57,13 @@ def nbrofnbr(Graph, NIdV):
     return NNIdV
 
 
-
-
-year_list = ["{}".format(i) for i in range(2001, 2011)]
+year_list = ["{}".format(i) for i in range(2001, 2019)]
 
 
 for year in year_list:
     graph_list = []
     dict_of_word = {}
-    with open('graph{}.txt'.format(year), 'r') as f:
+    with open('..\\data\\graph\\graph{}.txt'.format(year), 'r') as f:
         for line in f.readlines():
             if line.split():
                 graph_list.append(line.split())
@@ -86,48 +83,49 @@ for year in year_list:
             Graph.AddNode(v2)
         if not Graph.IsEdge(v1, v2) and v1 != v2:
             Graph.AddEdge(v1, v2)
-    snap.SaveEdgeList(Graph, 'graph{}'.format(year))
-    with open('dict{}'.format(year), 'w') as f:
+    snap.SaveEdgeList(Graph, '..\\data\\graph\\graph{}'.format(year))
+    with open('..\\data\\dict\\dict{}'.format(year), 'w') as f:
         for w1, w2 in dict_of_word.items():
             f.write(w1+' '+str(w2)+'\n')
-    # v = dict_of_word['改革']
-    #
-    # nodefirst = v
-    # node = Graph.GetNI(nodefirst)
-    #
-    # degree = node.GetDeg()
-    # Nlist = snap.TIntV()
-    # NIdV = snap.TIntV()
-    #
-    # for i in range(degree):
-    #     if node.GetNbrNId(i) != nodefirst:
-    #         NIdV.Add(node.GetNbrNId(i))
-    #         Nlist.Add(node.GetNbrNId(i))
-    #
-    # NNIdV = snap.TIntV()
-    # for nodeid in NIdV:
-    #     node = Graph.GetNI(nodeid)
-    #     degree = node.GetDeg()
-    #     for i in range(degree):
-    #         if not node.GetNbrNId(i) in NIdV and not node.GetNbrNId(i) in NNIdV and node.GetNbrNId(i) != nodefirst:
-    #             NNIdV.Add(node.GetNbrNId(i))
-    #             Nlist.Add(node.GetNbrNId(i))
-    # Nlist.Add(nodefirst)
-    # SubGraph = snap.GetSubGraph(Graph, Nlist)
-    #
-    # labels = snap.TIntStrH()
-    #
-    # for NI in SubGraph.Nodes():
-    #     labels[NI.GetId()] = word_of_dict[NI.GetId()]
-    #
-    # snap.SaveGViz(SubGraph, 'subgraph{}.dot'.format(year), "", labels)
-    # alter("subgraph{}.dot".format(year),
-    #       'shape=ellipse, width=0.3, height=0.3',
-    #       'shape=ellipse, width=0.3, height=0.3, fontname="SimSun" size=\"10,10\"')
-    # for i in NIdV:
-    #     alter2("subgraph{}.dot".format(year), i, "#65934A")
-    # for i in NNIdV:
-    #     alter2("subgraph{}.dot".format(year), i, "#A0BF7C")
-    #
-    # alter2("subgraph{}.dot".format(year), v, "#407434")
+    if '科技' in dict_of_word.keys():
+        v = dict_of_word['科技']
+
+        nodefirst = v
+        node = Graph.GetNI(nodefirst)
+
+        degree = node.GetDeg()
+        Nlist = snap.TIntV()
+        NIdV = snap.TIntV()
+
+        for i in range(degree):
+            if node.GetNbrNId(i) != nodefirst:
+                NIdV.Add(node.GetNbrNId(i))
+                Nlist.Add(node.GetNbrNId(i))
+
+        NNIdV = snap.TIntV()
+        for nodeid in NIdV:
+            node = Graph.GetNI(nodeid)
+            degree = node.GetDeg()
+            for i in range(degree):
+                if not node.GetNbrNId(i) in NIdV and not node.GetNbrNId(i) in NNIdV and node.GetNbrNId(i) != nodefirst:
+                    NNIdV.Add(node.GetNbrNId(i))
+                    Nlist.Add(node.GetNbrNId(i))
+        Nlist.Add(nodefirst)
+        SubGraph = snap.GetSubGraph(Graph, Nlist)
+
+        labels = snap.TIntStrH()
+
+        for NI in SubGraph.Nodes():
+            labels[NI.GetId()] = word_of_dict[NI.GetId()]
+
+        snap.SaveGViz(SubGraph, '..\\data\\subgraph\\subgraph{}.dot'.format(year), "三农中的科技词图{}".format(year), labels)
+        alter("..\\data\\subgraph\\subgraph{}.dot".format(year),
+              'shape=ellipse, width=0.3, height=0.3',
+              'shape=ellipse, width=0.3, height=0.3, fontname="SimSun" size=\"7,7\"')
+        for i in NIdV:
+            alter2("..\\data\\subgraph\\subgraph{}.dot".format(year), i, "#65934A")
+        for i in NNIdV:
+            alter2("..\\data\\subgraph\\subgraph{}.dot".format(year), i, "#A0BF7C")
+
+        alter2("..\\data\\subgraph\\subgraph{}.dot".format(year), v, "#407434")
 

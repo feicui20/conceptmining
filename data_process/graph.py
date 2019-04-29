@@ -3,11 +3,8 @@
 import pandas as pd
 import re
 import jieba.analyse
-
-# import the '1978to2019.csv' file
-df = pd.read_csv('1978to2019.csv')
-df['date'] = pd.to_datetime(df['date'])
-df = df.set_index('date')
+import argparse
+import sys
 
 
 # use connect function to link words
@@ -27,44 +24,69 @@ def connect(word_list, num):
                 pass
 
 
-global my_dict
-my_dict = []
-with open('real_dict_100_1000.txt', 'r') as f:
-    for i in f.readlines():
-        my_dict.append("".join(i.split()))
+def main(args):
 
-year_list = ["{}".format(i) for i in range(2001, 2011)]
-print(year_list)
-for year in year_list:
-    word_list = ""
-    for i in range(len(df[year])):
-        para = df[year].iloc[i]['para']
-        if not pd.isnull(para):
-            para_n = re.findall(r"[\u4e00-\u9fff]+", para)
-            para = "".join(para_n)
-            para = "".join(para.split())
-            word_list += " ".join(jieba.cut(para))
-            word_list += '\n'
+    # import the '1978to2019.csv' file
+    csv_file = args.csv_file
+    dict_file = args.dict_file
+    output_dir = args.output_dir
+    begin = args.begin
+    end = args.end
+    num = args.num
+    global my_dict
+    global graph_list
+    year_list = ["{}".format(i) for i in range(begin, end+1)]
+    df = pd.read_csv(csv_file)
+    df['date'] = pd.to_datetime(df['date'])
+    df = df.set_index('date')
 
-    with open('{}.txt'.format(year), 'w', encoding='utf-8') as f:
-        f.write(word_list)
+    with open(dict_file, 'r', encoding='utf-8') as f:
+        my_dict = []
+        for i in f.readlines():
+            my_dict.append("".join(i.split()))
+
+    for year in year_list:
+        word_list = ""
+        for i in range(len(df[year])):
+            para = df[year].iloc[i]['para']
+            if not pd.isnull(para):
+                para_n = re.findall(r"[\u4e00-\u9fff]+", para)
+                para = "".join(para_n)
+                para = "".join(para.split())
+                word_list += " ".join(jieba.cut(para))+'\n'
+
+        with open(output_dir+'\\{}.txt'.format(year), 'w', encoding='utf-8') as f:
+            f.write(word_list)
+
+    for year in year_list:
+        graph_list = []
+        with open(output_dir+'\\{}.txt'.format(year), 'r', encoding='utf-8') as f:
+            for line in f.readlines():
+                word_list = line.split()
+                connect(word_list, num)
+        with open(output_dir+'\\graph{}.txt'.format(year), 'w', encoding='utf-8') as f:
+            for item in graph_list:
+                f.write(" ".join(item)+'\n')
 
 
-num = 2
-for year in year_list:
-    word_list = []
-    graph_list = []
-    with open('{}.txt'.format(year), 'r', encoding='utf-8') as f:
-        for line in f.readlines():
-            word_list = line.split()
-            connect(word_list, num)
-    with open('graph{}.txt'.format(year), 'w', encoding='utf-8') as f:
-        for item in graph_list:
-            f.write(" ".join(item))
-            f.write('\n')
+def parse_arguments(argv):
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('--csv_file', type=str, default='..\\data\\raw\\1978to2019.csv',
+                        help='Csv file.')
+    parser.add_argument('--dict_file', type=str, default='..\\data\\usage\\real_dict_100.txt',
+                        help='Dict file.')
+    parser.add_argument('--output_dir', type=str, default='..\\data\\graph',
+                        help='Output directory.')
+    parser.add_argument('--begin', type=int, default=2001,
+                        help='The year begin from.')
+    parser.add_argument('--end', type=int, default=2018,
+                        help='The year end from.')
+    parser.add_argument('--num', type=int, default=2,
+                        help='Number that we concerned.')
+
+    return parser.parse_args(argv)
 
 
-
-
-
-
+if __name__ == "__main__":
+    main(parse_arguments(sys.argv[1:]))
